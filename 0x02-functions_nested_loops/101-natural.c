@@ -2,11 +2,13 @@
 
 /**
 
- * main - prints the sum of all the multiples of 3 or 5 below 1024
+ * main - Prints natural numbers below 1024 that are
 
- * @void: void
+ * multiples of 3 or 5
 
- * Return: 0 Success
+ *
+
+ * Return: Always 0.
 
  */
 
@@ -14,24 +16,50 @@ int main(void)
 
 {
 
-	int n;	int sum = 0;
+	int a, b;
 
-	for (n = 0; n < 1024; n++)
+	for (a = 1; a < 1024; a++)
 
 	{
 
-		if (n % 3 == 0 || n % 5 == 0)
+		if ((a % 3) == 0 || (a % 5) == 0)
 
-		{
-
-			sum += n;
-
-		}
+			b += a;
 
 	}
 
-	printf("%d\n", sum);
+	printf("%d\n", b);
 
 	return (0);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+		
+
+
+
+		
+
+	
+
+
+
+
+
+
