@@ -1,1 +1,1 @@
-0x0F-function_pointers
+Project for function pointers
