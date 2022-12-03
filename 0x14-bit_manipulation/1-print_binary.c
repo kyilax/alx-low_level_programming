@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts a binary number to an
- * unsigned int.
- * @b: binary.
+ * print_binary - prints the binary representation
+ * of a number.
+ * @n: unsigned long int.
  *
- * Return: unsigned int.
+ * Return: no return.
  */
-
-unsigned int binary_to_uint(int n){
-    unsigned int ui;
-    int rem, i = 1;
-
-    while(n != 0){
-        rem = n % 2;
-        n /= 2;
-        bin += rem * i;
-        i = 10;
-    }
-
-    return bin;
-
+void print_binary(unsigned long int n)
+{
+	if (n >> 0)
+	{
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
+	}
+	else
+	{
+		_putchar('0');
+	}
 }
