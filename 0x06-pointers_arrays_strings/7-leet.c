@@ -1,9 +1,8 @@
 
 char *leet(char *s)
 {
-    int low[] = {97, 101, 111, 116, 108};
-    int high[] = {65, 69, 79, 84, 76};
-    int num_code[] = {52, 51, 48, 55, 49, 52, 51, 48, 55, 49};
+    int letter[] = {97, 65, 101, 69, 111, 79, 116, 84, 108, 76};
+    int num_code[] = {52, 52, 51, 51, 48, 48, 55, 55, 49, 49};
 
     int count = 0, i;
 
@@ -11,7 +10,7 @@ char *leet(char *s)
     {
         for (i = 0; i < 10; i++)
         {
-            if (*(s + count) == low[i] || *(s + count) == high[i])
+            if (*(s + count) == letter[i])
             {
                 *(s + count) = num_code[i];
             }
